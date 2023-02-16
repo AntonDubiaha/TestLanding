@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Landing</title>
+  </head>
+  <body>
+    <section class="promo" id="home">
+      <div class="container">
+        <header class="header">
+          <a href="#" class="logo">
+            <div class="logo_wrap">
+              <img src="icons/logo/Shape_1.svg" alt="logo" class="logo_img" />
+              <div class="logo_text">
+                Dart <br />
+                <span>service manager</span>
+              </div>
+            </div>
+          </a>
+          <nav class="nav">
+            <ul class="nav_list">
+              <li class="nav_item"><a href="#home">Home</a></li>
+              <li class="nav_item"><a href="#service">Service</a></li>
+              <li class="nav_item"><a href="#useful">Useful</a></li>
+              <li class="nav_item"><a href="#team">Our Team</a></li>
+              <li class="nav_item" id="help"><a href="#contact">Help</a></li>
+            </ul>
+          </nav>
+          <div class="promo_sign">
+            <button>sign up</button>
+          </div>
+        </header>
+        <div class="promo_content">
+          <div class="promo_text">
+            <h1 class="promo_title">
+              Lorem Ipsum<br />
+              Dolor sit amet
+            </h1>
+            <div class="promo_descr">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              voluptatibus earum reprehenderit eligendi libero aut dolorum,
+              quibusdam quae cupiditate architecto in dolorem consectetur
+              commodi hic neque facilis adipisci sed! Odit.
+            </div>
+            <div class="promo_btns">
+              <button class="promo_btn promo_btn_1" id="buyNowBtn">
+                Buy now
+              </button>
+              <button class="promo_btn promo_btn_2" id="TryBtn">
+                Try for free
+              </button>
+            </div>
+          </div>
+          <div class="promo_video">
+                    <video id="video" width="570" height="320" src="video/videopromo.mp4" poster="video/3.2 poster.png"></video>
+                    <div class="promo_play" id="playVideo">
+                        <div>
+                            <i class="fas fa-play"></i> 
+                        </div>
+                        Watch the video
+                    </div>
+                </div>
+        </div>
+      </div>
+    </section>
+    <section class="useful" id="useful">
+      <div class="container">
+        <h2 class="title">Easy & Useful</h2>
+        <div class="subtitle">Project Managment Tool</div>
+        <div class="descr">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat
+          quasi vel rem ex amet asperiores odi
+        </div>
+        <div class="useful_content">
+          <div class="useful_item">
+            <div class="useful_icon">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div class="useful_text">
+              <h3 class="useful_title">Title Goes Here</h3>
+              <div class="useful_descr">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+          <div class="useful_item">
+            <div class="useful_icon">
+              <i class="fa-solid fa-person"></i>
+            </div>
+            <div class="useful_text">
+              <h3 class="useful_title">Title Goes Here</h3>
+              <div class="useful_descr">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+          <div class="useful_item">
+            <div class="useful_icon">
+              <i class="fa-solid fa-user-injured"></i>
+            </div>
+            <div class="useful_text">
+              <h3 class="useful_title">Title Goes Here</h3>
+              <div class="useful_descr">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="useful_btn">Get started</button>
+      </div>
+    </section>
+    <section class="progress">
+      <div
+        class="progress_item business_item"
+        id="business_item"
+        onmouseover="change_business_item()"
+        onmouseout="rechange_business_item()"
+      >
+        <div class="progress_wrap">
+          <div class="progress_icon">
+            <i class="fa-solid fa-building" id="fa-building"></i>
+          </div>
+          <div class="progress_text">12000+<br />Business</div>
+        </div>
+      </div>
+      <div
+        class="progress_item download_item"
+        id="download_item"
+        onmouseover="change_download_item()"
+        onmouseout="rechange_download_item()"
+      >
+        <div class="progress_wrap">
+          <div class="progress_icon">
+            <i class="fa-solid fa-download" id="fa-download"></i>
+          </div>
+          <div class="progress_text">60000+<br />Downloads</div>
+        </div>
+      </div>
+      <div
+        class="progress_item install_item"
+        id="install_item"
+        onmouseover="change_install_item()"
+        onmouseout="rechange_install_item()"
+      >
+        <div class="progress_wrap">
+          <div class="progress_icon">
+            <i class="fa-solid fa-user" id="fa-user"></i>
+          </div>
+          <div class="progress_text">30000+<br />Free Installs</div>
+        </div>
+      </div>
+      <div
+        class="progress_item users_item"
+        id="users_item"
+        onmouseover="change_users_item()"
+        onmouseout="rechange_users_item()"
+      >
+        <div class="progress_wrap">
+          <div class="progress_icon">
+            <i class="fa-solid fa-crown" id="fa-crown"></i>
+          </div>
+          <div class="progress_text">40000+<br />Pro users</div>
+        </div>
+      </div>
+    </section>
+    <section class="service" id="service">
+      <h2 class="title">Services</h2>
+      <div class="descr">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna
+      </div>
+      <div class="service_content">
+        <div class="tabs">
+          <div class="tabs_item">
+            <div class="tabs_head">
+              <div class="tabs_wrap">
+                <div class="tabs_icon">
+                  <i class="fa-solid fa-arrow-trend-up"></i>
+                </div>
+                <div class="tabs_title">Statistics</div>
+              </div>
+              <div class="tabs_down">
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+            <div class="tabs_content">
+              <div
+                class="tabs_img"
+                style="
+                  background: url(img/tabs/Rounded_Rectangle_53.png) center
+                    center/cover no-repeat;
+                "
+              ></div>
+              <div class="tabs_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam,<br /><br />
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in
+              </div>
+            </div>
+          </div>
+          <div class="tabs_item">
+            <div class="tabs_head">
+              <div class="tabs_wrap">
+                <div class="tabs_icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="tabs_title">Inbox</div>
+              </div>
+              <div class="tabs_down">
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+            <div class="tabs_content">
+              <div
+                class="tabs_img"
+                style="
+                  background: url(img/tabs/justin-morgan-D2TZ-ashGzc-unsplash.jpg)
+                    center center/cover no-repeat;
+                "
+              ></div>
+              <div class="tabs_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam,<br /><br />
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in
+              </div>
+            </div>
+          </div>
+          <div class="tabs_item">
+            <div class="tabs_head">
+              <div class="tabs_wrap">
+                <div class="tabs_icon">
+                  <i class="fa-solid fa-people-group"></i>
+                </div>
+                <div class="tabs_title">Team</div>
+              </div>
+              <div class="tabs_down">
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+            <div class="tabs_content">
+              <div
+                class="tabs_img"
+                style="
+                  background: url(img/tabs/annie-spratt-QckxruozjRg-unsplash.jpg)
+                    center center/cover no-repeat;
+                "
+              ></div>
+              <div class="tabs_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam,<br /><br />
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in
+              </div>
+            </div>
+          </div>
+          <div class="tabs_item">
+            <div class="tabs_head">
+              <div class="tabs_wrap">
+                <div class="tabs_icon">
+                  <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="tabs_title">Settings</div>
+              </div>
+              <div class="tabs_down">
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+            <div class="tabs_content">
+              <div
+                class="tabs_img"
+                style="
+                  background: url(img/tabs/riekus-K7NrWCUINVY-unsplash.jpg)
+                    center center/cover no-repeat;
+                "
+              ></div>
+              <div class="tabs_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam,<br /><br />
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in
+              </div>
+            </div>
+          </div>
+          <div class="tabs_item">
+            <div class="tabs_head">
+              <div class="tabs_wrap">
+                <div class="tabs_icon">
+                  <i class="fa-solid fa-wifi"></i>
+                </div>
+                <div class="tabs_title">Feed</div>
+              </div>
+              <div class="tabs_down">
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+            <div class="tabs_content">
+              <div
+                class="tabs_img"
+                style="
+                  background: url(img/tabs/afif-ramdhasuma-D1z3dwROc44-unsplash.jpg)
+                    center center/cover no-repeat;
+                "
+              ></div>
+              <div class="tabs_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam,<br /><br />
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comment">
+      <div class="container">
+        <div class="comment_wrap">
+          <div>
+            <h2 class="comment_title">
+              What our customers<br />
+              have to say about us.
+            </h2>
+            <div class="comment_descr">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna
+            </div>
+            <button class="comment_btn">Get started</button>
+          </div>
+          <div>
+            <div class="comment_item">
+              <div
+                class="comment_icon"
+                style="
+                  background: url(icons/comment/22.jpg) center center/cover
+                    no-repeat;
+                "
+              ></div>
+              <div class="comment_content">
+                <div class="comment_name">John Doe</div>
+                <div class="comment_text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea
+                </div>
+              </div>
+            </div>
+            <div class="comment_item">
+              <div
+                class="comment_icon"
+                style="
+                  background: url(icons/comment/photo-1493666438817-866a91353ca9.jpg)
+                    center center/cover no-repeat;
+                "
+              ></div>
+              <div class="comment_content">
+                <div class="comment_name">Khalessi</div>
+                <div class="comment_text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team" id="team">
+      <h2 class="title">Our Team</h2>
+      <div class="descr">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna
+      </div>
+      <div class="team_content">
+        <div class="carousel">
+          <div class="carousel_item">
+            <div
+              class="carousel_img"
+              style="
+                background: url(icons/team/79.jpg) center center/cover no-repeat;
+              "
+            ></div>
+            <div class="carousel_main">
+              <div class="carousel_name">Sophie Turner</div>
+              <div class="carousel_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum
+                dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt
+              </div>
+              <div class="carousel_links">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel_item">
+            <div
+              class="carousel_img"
+              style="
+                background: url(icons/team/4.jpg) center center/cover no-repeat;
+              "
+            ></div>
+            <div class="carousel_main">
+              <div class="carousel_name">John Doe</div>
+              <div class="carousel_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum
+                dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt
+              </div>
+              <div class="carousel_links">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel_item">
+            <div
+              class="carousel_img"
+              style="
+                background: url(icons/team/1.jpg) center center/cover no-repeat;
+              "
+            ></div>
+            <div class="carousel_main">
+              <div class="carousel_name">Markus M</div>
+              <div class="carousel_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum
+                dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt
+              </div>
+              <div class="carousel_links">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="title">Contact Us</h2>
+      <div class="descr descr_dark">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna
+      </div>
+      <div class="contact_content">
+        <form action="form.php" method="POST" class="form">
+          <div class="form_wrap">
+            <input
+              type="text"
+              name="firstName"
+              class="form_inp"
+              placeholder="First name"
+              required
+            />
+            <input
+              type="text"
+              name="lastName"
+              class="form_inp"
+              placeholder="Last name"
+            />
+          </div>
+          <div class="form_wrap">
+            <input
+              type="email"
+              name="email"
+              class="form_inp"
+              placeholder="Email"
+              required
+            />
+            <input type="tel" name="tel" class="form_inp" placeholder="Phone" />
+          </div>
+          <textarea
+            name="message"
+            class="form_message"
+            placeholder="Message"
+            required
+          ></textarea>
+          <div class="form_send">
+            <label for="subs"
+              ><input type="checkbox" name="subs" class="form_subs" />Subscribe
+              to the newsletter</label
+            >
+            <input type="submit" class="form_btn" value="send" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_wrap">
+          <div class="footer_first">
+            <a href="#" class="logo">
+              <div class="logo_wrap">
+                <img src="icons/logo/Shape_1.svg" alt="logo" class="logo_img" />
+                <div class="logo_text">
+                  Dart <br />
+                  <span>service manager</span>
+                </div>
+              </div>
+            </a>
+            <div class="footer_submenu">
+              <a href="#">Privecy Policy</a>
+              <div></div>
+              <a href="#">About Us</a>
+              <div></div>
+              <a href="#">More About Us</a>
+            </div>
+          </div>
+          <div class="footer_primary">
+            <nav class="nav nav_footer">
+              <ul class="nav_list">
+                <li class="nav_item"><a href="#home">Home</a></li>
+                <li class="nav_item"><a href="#useful">Useful</a></li>
+                <li class="nav_item"><a href="#service">Service</a></li>
+                <li class="nav_item"><a href="#team">Our Team</a></li>
+                <li class="nav_item nav_item_margin_none">
+                  <a href="#contact">Help</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer_links">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup">
+      <div class="popup_wrap">
+        <div class="popup_form">
+          <form class="form">
+            <div class="form_wrap">
+              <input
+                type="text"
+                name="firstName"
+                class="form_inp"
+                placeholder="First name"
+                required
+              />
+              <input
+                type="text"
+                name="lastName"
+                class="form_inp"
+                placeholder="Last name"
+              />
+            </div>
+            <div class="form_wrap">
+              <input
+                type="email"
+                name="email"
+                class="form_inp"
+                placeholder="Email"
+                required
+              />
+              <input
+                type="tel"
+                name="tel"
+                class="form_inp"
+                placeholder="Phone"
+              />
+            </div>
+            <textarea
+              name="message"
+              class="form_message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <div class="form_send">
+              <label for="subs"
+                ><input
+                  type="checkbox"
+                  name="subs"
+                  class="form_subs"
+                />Subscribe to the newsletter</label
+              >
+              <input type="submit" class="form_btn" value="send" />
+            </div>
+          </form>
+        </div>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="popup_done">
+        <div>Message has been successfully sent!</div>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
