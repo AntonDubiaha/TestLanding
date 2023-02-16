@@ -3,6 +3,18 @@
   font-size: 15px;
 }
 
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #777;
+}
+
 .container {
   padding: 0 80px;
 }
